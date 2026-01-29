@@ -1,4 +1,8 @@
-name: "test-service"
-protocol: "https"
-host: "www.httpbin.org"
-port: "443"
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-service
+spec:
+  type: website
+  owner: www.httpbin.org
+  lifecycle: experimental
