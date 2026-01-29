@@ -1,6 +1,4 @@
-{
-  "name": "test-service",
-  "protocol": "https",
-  "host": "www.httpbin.org",
-  "port": 443
-}
+name: "test-service"
+protocol: "https"
+host: "www.httpbin.org"
+port: "443"
