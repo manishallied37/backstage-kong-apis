@@ -21,5 +21,3 @@ spec:
       /api/route1:
         get:
           summary: GET via Kong route test-route
-        post:
-          summary: POST via Kong route test-route
