@@ -3,6 +3,7 @@ kind: Component
 metadata:
   name: test-service
 spec:
-  type: website
+  type: grpc
+  system: examples
   owner: guests
   lifecycle: experimental
