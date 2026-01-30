@@ -20,4 +20,4 @@ spec:
     paths:
       /api/route1:
         get:
-          summary: GET via Kong route test-route
+          summary: GET via Kong route test-route route
