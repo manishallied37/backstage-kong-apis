@@ -1,9 +1,25 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
-  name: test-service
+  name: test-service-api
+  description: Kong service test-service
+  tags:
+    - kong
 spec:
-  type: grpc
-  system: examples
-  owner: guests
+  type: openapi
   lifecycle: experimental
+  owner: guests
+  system: examples
+  definition: |
+    openapi: 3.0.1
+    info:
+      title: Test Service API
+      version: 1.0.0
+    servers:
+      - url: https://www.httpbin.org
+    paths:
+      /api/route1:
+        get:
+          summary: GET via Kong route test-route
+        post:
+          summary: POST via Kong route test-route
